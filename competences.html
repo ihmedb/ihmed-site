@@ -2,9 +2,11 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tableau de Compétences</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Compétences - TodoBooks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
@@ -12,15 +14,309 @@
       <ul class="menu">
         <li><a href="index.html">Accueil</a></li>
         <li><a href="apropos.html">À propos</a></li>
-        <li><a href="competences.html">Tableau de Compétences</a></li>
+        <li><a href="competences.html">Compétences</a></li>
         <li><a href="projets.html">Projets</a></li>
         <li><a href="veille.html">Veille Technologique</a></li>
       </ul>
     </nav>
   </header>
-  <main>
-    <h1>Tableau de Compétences</h1>
-    <p>Tu pourras insérer ici un tableau HTML avec les blocs E6 validés.</p>
-  </main>
+
+<div class="container mt-5">
+  <h1 class="text-center mb-4">Tableau de Compétences - TodoBooks</h1>
+
+  <div class="table-responsive">
+    <table class="table table-bordered table-hover text-center align-middle">
+      <thead class="table-dark">
+        <tr>
+          <th>Projet</th>
+          <th>Gérer le patrimoine informatique</th>
+          <th>Répondre aux incidents et aux demandes d’assistance et d’évolution</th>
+          <th>Développer la présence en ligne de l’organisation</th>
+          <th>Travailler en mode projet</th>
+          <th>Mettre à disposition des utilisateurs un service informatique</th>
+          <th>Organiser son développement professionnel</th>
+        </tr>
+      </thead>
+      <!-- Mes Projets -->
+      <tbody>
+        <tr>
+          <td>📘 TodoBooks</td>
+          <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalGPI">✔</button></td>
+          <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalIncidents">✔</button></td>
+          <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalWeb">✔</button></td>
+          <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalProjet">✔</button></td>
+          <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalService">✔</button></td>
+          <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalDevPro">✔</button></td>
+        </tr>
+      
+        <tr>
+          <td>📦 Dropshipping</td>
+          <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalGPI-ds">✔</button></td>
+          <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalIncidents-ds">✔</button></td>
+          <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalWeb-ds">✔</button></td>
+          <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalProjet-ds">✔</button></td>
+          <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalService-ds">✔</button></td>
+          <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalDevPro-ds">✔</button></td>
+        </tr>
+      
+        <tr>
+          <td>🏛️ M2L</td>
+          <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalGPI-m2l">✔</button></td>
+          <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalIncidents-m2l">✔</button></td>
+          <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalWeb-m2l">✔</button></td>
+          <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalProjet-m2l">✔</button></td>
+          <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalService-m2l">✔</button></td>
+          <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalDevPro-m2l">✔</button></td>
+        </tr>
+      
+        <tr>
+          <td>🧭 Vivons Expo</td>
+          <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalGPI-vexpo">✔</button></td>
+          <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalIncidents-vexpo">✔</button></td>
+          <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalWeb-vexpo">✔</button></td>
+          <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalProjet-vexpo">✔</button></td>
+          <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalService-vexpo">✔</button></td>
+          <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalDevPro-vexpo">✔</button></td>
+        </tr>
+      
+        <tr>
+          <td>🎓 IUT Bordeaux</td>
+          <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalGPI-iut">✔</button></td>
+          <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalIncidents-iut">✔</button></td>
+          <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalWeb-iut">✔</button></td>
+          <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalProjet-iut">✔</button></td>
+          <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalService-iut">✔</button></td>
+          <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalDevPro-iut">✔</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<!-- Modal : Travailler en mode projet -->
+<div class="modal fade" id="modalProjet" tabindex="-1" aria-labelledby="modalProjetLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalProjetLabel">📘 TodoBooks – Travailler en mode projet</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+      </div>
+      <div class="modal-body">
+        <h6 class="fw-bold">🧩 Sous-compétence : Évaluer les indicateurs de suivi d’un projet et analyser les écarts</h6>
+        <p>
+           Pour ce projet, j’ai pris en compte les consignes données chaque jour par mon maître de stage, que j’ai notées sous forme d’objectifs dans un tableau.
+  À la fin de chaque journée, j’ai ajouté une section “Remarques” pour évaluer si les objectifs avaient été atteints ou non, identifier les difficultés rencontrées et ajuster la planification si nécessaire.
+        </p>
+
+        <div class="text-center my-3">
+          <img src="images/todobooks1.png" class="img-fluid rounded shadow" alt="Organisation du projet TodoBooks">
+        </div>
+
+        <p>J’ai utilisé GitLab pour organiser et suivre l’évolution de mon projet TodoBooks. Un dépôt distinct a été créé pour le backend et le frontend. Cette séparation m’a permis de structurer mon travail, d’assurer un meilleur suivi des modifications, et de collaborer efficacement avec mon tuteur via un espace partagé.</p>
+      <div class="text-center my-3">
+          <img src="images/todobooks2.png" class="img-fluid rounded shadow" alt="Organisation du projet TodoBooks">
+      </div>
+      <h6 class="fw-bold">🧩 Sous-compétence : Analyser les objectifs et les modalités d’organisation d’un projet</h6>
+<p>
+  Au début du projet <strong>TodoBooks</strong>, j’ai analysé l’architecture <strong>MVCSRW</strong> utilisée dans le backend.
+  J’ai synthétisé cette structure dans un schéma que j’ai transmis à mon tuteur de stage par mail.
+  Cela m’a permis de valider ma compréhension avant de commencer le développement.
+</p>
+
+<div class="text-center my-3">
+  <img src="images/todobooks11.png" class="img-fluid rounded shadow" alt="Schéma architecture MVCSRW">
+  <p class="mt-2">Schéma de l’architecture MVCSRW envoyé à mon tuteur</p>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal : Mettre à disposition un service -->
+<div class="modal fade" id="modalService" tabindex="-1" aria-labelledby="modalServiceLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalServiceLabel">📘 TodoBooks – Mettre à disposition un service informatique</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+      </div>
+      <div class="modal-body">
+        <h6 class="fw-bold">🧩 Sous-compétence : Réaliser les tests d’intégration et d’acceptation d’un service</h6>
+        <p>
+          J’ai utilisé Postman pour tester les endpoints de mon API développée dans le projet TodoBooks.
+          Cette capture montre le test du <code>GET /api/livres</code>, qui permet de récupérer la liste des livres stockés dans la base.
+          Le format de réponse est conforme et exploitable côté frontend.
+        </p>
+
+        <div class="text-center my-3">
+          <img src="images/todobooks5.png" class="img-fluid rounded shadow" alt="Test Postman GET /api/livres">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal : Gérer le patrimoine informatique -->
+<div class="modal fade" id="modalGPI" tabindex="-1" aria-labelledby="modalGPILabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalGPILabel">📘 TodoBooks – Gérer le patrimoine informatique</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+      </div>
+      <div class="modal-body">
+        <h6 class="fw-bold">🧩 Sous-compétence : Exploiter des référentiels, normes et standards adoptés par le prestataire informatique</h6>
+        <p>
+          J’ai structuré mon backend TodoBooks selon le modèle <strong>MVCSRM</strong>, en suivant les normes définies par Benomads.
+          Cette architecture m’a permis d’intégrer <strong>Sequelize</strong> pour la gestion de la base de données
+          et <strong>OAuth 2.0</strong> pour l’authentification. J’ai aussi réalisé un <strong>schéma explicatif</strong> validé par mon tuteur.
+        </p>
+
+        <div class="row text-center my-3">
+          <div class="col-md-6 mb-3">
+            <img src="images/todobooks8.png" class="img-fluid rounded shadow" alt="Architecture 1">
+            <p>Architecture MVCSRM(Model, View, Controller, Services, Routes, Middleware)</p>
+          </div>
+          <div class="col-md-6 mb-3">
+            <img src="images/todobooks6.png" class="img-fluid rounded shadow" alt="Architecture 2">
+            <p>Modèle Sequelize d'un Book</p>
+          </div>
+          <div class="col-md-6 mb-3">
+            <img src="images/todobooks10.png" class="img-fluid rounded shadow" alt="Schéma MVCSRM">
+            <p>Génération du token à la connexion</p>
+          </div>
+          <div class="col-md-6 mb-3">
+            <img src="images/todobooks7.png" class="img-fluid rounded shadow" alt="Authentification OAuth2">
+            <p>Vérification du token via middleware</p>
+          </div>
+
+          <hr class="my-4">
+
+          <h6 class="fw-bold">🧩 Sous-compétence : Vérifier les conditions de la continuité d’un service informatique</h6>
+          <p>
+            J’ai utilisé <strong>Docker Compose</strong> pour orchestrer le démarrage de mes conteneurs backend et base de données MySQL.
+            Grâce au <strong>healthcheck</strong>, le backend ne démarre que lorsque la base est prête. Cela permet de garantir la stabilité du service,
+            même en cas de redémarrage ou d’erreur de séquencement.
+          </p>
+
+          <div class="text-center my-3">
+            <img src="images/todobooks9.png" class="img-fluid rounded shadow" alt="Docker Compose & Healthcheck">
+            <p class="mt-2">Docker Compose et gestion de la dépendance entre services</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal : Organiser son développement professionnel -->
+<div class="modal fade" id="modalDevPro" tabindex="-1" aria-labelledby="modalDevProLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalDevProLabel">📘 TodoBooks – Organiser son développement professionnel</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+      </div>
+      <div class="modal-body">
+        <h6 class="fw-bold">🧩 Sous-compétence : Mettre en place son environnement d’apprentissage personnel</h6>
+        <p>
+          Durant les trois premières semaines du projet <strong>TodoBooks</strong>, j’ai suivi un <strong>planning quotidien</strong> partagé avec mon tuteur.
+          Chaque matin, nous échangions sur les <strong>objectifs techniques</strong> à atteindre, les notions à comprendre, et les ressources à utiliser.
+          L’après-midi était consacré à l’autonomie, à la réalisation et à la mise en application des apprentissages.
+        </p>
+        <p>
+          Ce planning structuré m’a permis de progresser efficacement dans un <strong>cadre professionnel</strong>.
+        </p>
+
+        <div class="text-center my-3">
+          <img src="images/todobooks12.png" class="img-fluid rounded shadow" alt="Planning d’apprentissage TodoBooks">
+          <p class="mt-2">Exemple de planning hebdomadaire utilisé pendant les 3 premières semaines</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- PROJET DropShipping -->
+
+<!-- Modal : Travailler en mode projet - Dropshipping -->
+<div class="modal fade" id="modalProjet-ds" tabindex="-1" aria-labelledby="modalProjetDSLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalProjetDSLabel">📦 Dropshipping – Travailler en mode projet</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+      </div>
+      <div class="modal-body">
+        <h6 class="fw-bold">🧩 Sous-compétence : Planifier les activités</h6>
+        <p>
+          Dans le cadre du projet <strong>Dropshipping</strong>, nous avons utilisé le système de tickets <strong>GitLab</strong> pour planifier les tâches à réaliser.
+          Chaque issue représentait une fonctionnalité à développer ou un aspect à améliorer (UX, endpoints, footer...).
+        </p>
+        <p>
+          La répartition et la gestion des tâches ont permis une organisation claire et efficace entre les différents membres de l’équipe.
+        </p>
+
+        <div class="text-center my-3">
+          <img src="images/dropshipping5.png" class="img-fluid rounded shadow" alt="Planning GitLab Dropshipping">
+          <p class="mt-2">Exemple de tickets GitLab utilisés</p>
+        </div>
+        <div class="text-center my-3">
+          <img src="images/dropshipping7.png" class="img-fluid rounded shadow" alt="Planning GitLab Dropshipping">
+          <img src="images/dropshipping8.png" class="img-fluid rounded shadow" alt="Planning GitLab Dropshipping">
+          <p>Exemple de Tickets qui m'ont été attribués</p>
+        </div>
+        <hr class="my-4">
+
+        <h6 class="fw-bold">🧩 Sous-compétence : Évaluer les indicateurs de suivi d’un projet et analyser les écarts</h6>
+        <p>
+          Pendant le développement du projet <strong>Dropshipping</strong>, je partageais chaque matin un message dans le groupe <strong>WhatsApp</strong> de l’équipe pour annoncer mes tâches prévues.
+          J'évaluais l'état d'avancement de mes tâches prévue et j'identifiais les ressources à travailler. Cela permettait un suvi en détail du projet  par toute l'équipe.
+        </p>
+
+        <div class="text-center my-3">
+          <img src="images/dropshipping6.png" class="img-fluid rounded shadow" alt="Suivi journalier WhatsApp Dropshipping">
+          <p class="mt-2">Exemple de Message de suivi quotidien partagé avec l’équipe via WhatsApp</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal : Répondre aux incidents – Dropshipping -->
+<div class="modal fade" id="modalIncidents-ds" tabindex="-1" aria-labelledby="modalIncidentsDSLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalIncidentsDSLabel">📦 Dropshipping – Répondre aux incidents et aux demandes d’assistance</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+      </div>
+      <div class="modal-body">
+        <h6 class="fw-bold">🧩 Sous-compétence : Traiter des demandes concernant les applications</h6>
+        <p>
+          Pour répondre à une <strong>demande de mon maître de stage</strong>, j'ai modifié l'affichage du panier qui était affiché localement.
+          Si l’utilisateur est connecté, les données sont désormais <strong>récupérées via une API</strong>. Sinon, un panier temporaire est chargé depuis le <strong>localStorage</strong>.
+        </p>
+        <p>
+          Ce traitement permet de répondre aux besoins fonctionnels du projet en le rendant plus dynamique.
+        </p>
+
+        <div class="text-center my-3">
+          <img src="images/dropshipping3.png" class="img-fluid rounded shadow" alt="Gestion du panier connectés / invités">
+          <p class="mt-2">Gestion conditionnelle du panier : API pour utilisateurs connectés, localStorage sinon</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
