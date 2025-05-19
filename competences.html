@@ -13,7 +13,6 @@
     <nav>
       <ul class="menu">
         <li><a href="index.html">Accueil</a></li>
-        <li><a href="apropos.html">À propos</a></li>
         <li><a href="competences.html">Compétences</a></li>
         <li><a href="projets.html">Projets</a></li>
         <li><a href="veille.html">Veille Technologique</a></li>
@@ -42,8 +41,12 @@
         <tr>
           <td>📘 TodoBooks</td>
           <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalGPI">✔</button></td>
-          <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalIncidents">✔</button></td>
-          <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalWeb">✔</button></td>
+          <td>
+            <!-- <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalIncidents">✔</button> -->
+          </td>
+          <td>
+            <!-- <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalWeb">✔</button> -->
+          </td>
           <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalProjet">✔</button></td>
           <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalService">✔</button></td>
           <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalDevPro">✔</button></td>
@@ -55,17 +58,27 @@
           <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalIncidents-ds">✔</button></td>
           <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalWeb-ds">✔</button></td>
           <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalProjet-ds">✔</button></td>
-          <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalService-ds">✔</button></td>
+          <td>
+            <!-- <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalService-ds">✔</button> -->
+          </td>
           <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalDevPro-ds">✔</button></td>
         </tr>
       
         <tr>
           <td>🏛️ M2L</td>
           <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalGPI-m2l">✔</button></td>
-          <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalIncidents-m2l">✔</button></td>
-          <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalWeb-m2l">✔</button></td>
-          <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalProjet-m2l">✔</button></td>
-          <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalService-m2l">✔</button></td>
+          <td>
+            <!-- <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalIncidents-m2l">✔</button> -->
+          </td>
+          <td>
+            <!-- <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalWeb-m2l">✔</button> -->
+          </td>
+          <td>
+            <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalProjet-m2l">✔</button>
+          </td>
+          <td>
+            <!-- <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalService-m2l">✔</button> -->
+          </td>
           <td><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalDevPro-m2l">✔</button></td>
         </tr>
       
@@ -395,6 +408,180 @@
     </div>
   </div>
 </div>
+
+
+<!-- PROJET M2L -->
+
+<!-- Modal : Travailler en mode projet – M2L -->
+<div class="modal fade" id="modalProjet-m2l" tabindex="-1" aria-labelledby="modalProjetM2LLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalProjetM2LLabel">🏛️ M2L – Travailler en mode projet</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+      </div>
+      <div class="modal-body">
+        <h6 class="fw-bold">🧩 Sous-compétence : Analyser les objectifs et les modalités d’organisation d’un projet</h6>
+        <p>
+          En me basant sur le <strong>cahier des charges</strong> fourni, j’ai analysé les objectifs liés à la gestion des ligues et des clubs.
+          Le site devait permettre une <strong>consultation publique</strong> des données, mais aussi une interface de gestion réservée au rôle <strong>“Secrétaire”</strong>.
+        </p>
+        <p>
+          J’ai mis en œuvre cette distinction à la fois dans l’<strong>interface utilisateur</strong> (menu conditionnel selon la session)
+          et dans la <strong>logique métier</strong> (dans <code>controleurPrincipal.php</code> et les DAO), afin que seules les personnes autorisées
+          puissent modifier les données.
+        </p>
+        <p>
+          Les boutons d’ajout, modification et suppression sont <strong>dynamiquement affichés</strong> selon la session active.
+        </p>
+
+        <div class="row text-center my-3">
+          <div class="col-md-6 mb-4">
+            <img src="images/m2l1.png" class="img-fluid rounded shadow" alt="Cahier des charges M2L">
+            <p class="mt-2">Extrait de ma partie dans le cahier des charges</p>
+          </div>
+          <div class="col-md-6 mb-4">
+            <img src="images/m2l3.png" class="img-fluid rounded shadow" alt="Interface visiteur">
+            <p class="mt-2">Interface de consultation publique des données</p>
+          </div>
+          <div class="col-md-6 mb-4">
+            <img src="images/m2l2.png" class="img-fluid rounded shadow" alt="Interface secrétaire">
+            <p class="mt-2">Interface plus enrichie pour les secrétaires authentifiés</p>
+          </div>
+          <div class="col-md-6 mb-4">
+            <img src="images/m2l16.png" class="img-fluid rounded shadow" alt="Interface secrétaire">
+            <p class="mt-2">Création d'un Club</p>
+          </div>
+          <div class="col-md-6 mb-4">
+            <img src="images/m2l17.png" class="img-fluid rounded shadow" alt="Interface secrétaire">
+            <p class="mt-2">Modification d'un Club</p>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <img src="images/m2l19.png" class="img-fluid rounded shadow" alt="Interface secrétaire">
+            <p class="mt-2">Ajout d'une Ligue</p>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <img src="images/m2l18.png" class="img-fluid rounded shadow" alt="Interface secrétaire">
+            <p class="mt-2">Modification d'une Ligue</p>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <img src="images/m2l4.png" class="img-fluid rounded shadow" alt="Contrôleurs et DAO">
+            <p class="mt-2">Gestion des droits dans les contrôleurs et DAO</p>
+          </div>
+          <div class="col-md-6 mb-4">
+            <img src="images/m2l5.png" class="img-fluid rounded shadow" alt="Formulaire dynamique">
+            <p class="mt-2">Création dynamique du formulaire selon la session active</p>
+          </div>
+          <hr class="my-4">
+
+          <h6 class="fw-bold">🧩 Sous-compétence : Planifier les activités</h6>
+          <p>
+            Dans le cadre du projet <strong>M2L</strong>, j’ai travaillé sur une <strong>branche GitLab dédiée</strong> à la gestion des ligues et clubs (<code>secretaire-ihmed</code>).
+            Cela m’a permis de structurer mon travail <strong>indépendamment</strong> de celui de mes coéquipiers.
+          </p>
+          <p>
+            J’ai également planifié mon développement en suivant une <strong>arborescence MVC</strong> claire et conforme aux exigences du projet,
+            en séparant précisément les couches : vues, modèles, contrôleurs, DAO, et fichiers de configuration.
+          </p>
+
+          <div class="row text-center my-3">
+            <div class="col-md-6 mb-4">
+              <img src="images/m2l6.png" class="img-fluid rounded shadow" alt="Branche GitLab">
+              <p class="mt-2">Branche GitLab secretaire-ihmed utilisée pour organiser le développement</p>
+            </div>
+            <div class="col-md-6 mb-4">
+              <img src="images/m2l8.png" class="img-fluid rounded shadow" alt="Arborescence MVC">
+              <p class="mt-2">Arborescence du projet MVC</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal : Gérer le patrimoine informatique – M2L -->
+<div class="modal fade" id="modalGPI-m2l" tabindex="-1" aria-labelledby="modalGPIM2LLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalGPIM2LLabel">🏛️ M2L – Gérer le patrimoine informatique</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+      </div>
+      <div class="modal-body">
+        <h6 class="fw-bold">🧩 Sous-compétence : Exploiter des référentiels, normes et standards adoptés par le prestataire informatique</h6>
+        <p>
+          J’ai suivi les <strong>normes de développement imposées</strong> dans le projet M2L : architecture <strong>MVC</strong>, séparation des responsabilités,
+          et mise en œuvre de <strong>DAO/DTO</strong> pour accéder aux données. Cela garantit un code <strong>lisible, modulaire et maintenable</strong>.
+        </p>
+        <p>
+          J’ai également utilisé une <strong>classe PHP dédiée</strong> pour générer dynamiquement les éléments HTML des formulaires.
+          Cette classe, placée dans le dossier <code>/formulaire</code>, est appelée depuis les contrôleurs pour afficher les champs de manière réutilisable.
+        </p>
+
+        <div class="row text-center my-3">
+          <div class="col-md-6 mb-4">
+            <img src="images/m2l8.png" class="img-fluid rounded shadow" alt="Structure MVC M2L">
+            <p class="mt-2">Structure MVC utilisée pour organiser les fichiers du projet</p>
+          </div>
+          <div class="col-md-6 mb-4">
+            <img src="images/m2l9.png" class="img-fluid rounded shadow" alt="formulairesClubs.php">
+            <p class="mt-2">Classe PHP pour générer dynamiquement des formulaire</p>
+          </div>
+          <div class="col-md-6 mb-4">
+            <img src="images/m2l10.png" class="img-fluid rounded shadow" alt="ControleurLigues.php">
+            <p class="mt-2">Contrôleur appelant la classe de formulaire pour afficher dynamiquement les champs</p>
+          </div>
+
+          <hr class="my-4">
+
+        <h6 class="fw-bold">🧩 Sous-compétence : Mettre en place et vérifier les niveaux d’habilitation associés à un service</h6>
+        <p>
+          J’ai mis en place un système de contrôle d’accès basé sur l’authentification et le rôle de l’utilisateur.
+          Je récupère le login et mdp via un formulaire. Ils sont vérifiés via une requête SQL sur la BDD, et si l’authentification est réussie,
+          l’identifiant est stocké dans la session.
+        </p>
+        <p>
+          Le rôle de l’utilisateur est ensuite récupéré via la DAO, ce qui me permet d’afficher dynamiquement un menu ou une interface adaptée.
+        </p>
+
+
+        <div class="row text-center my-3">
+          <div class="col-md-6 mb-4">
+            <img src="images/m2l21.png" class="img-fluid rounded shadow" alt="Habilitation M2L 1">
+            <p>Formulaire d'authentification</p>
+          </div>
+          <div class="col-md-6 mb-4">
+            <img src="images/m2l20.png" class="img-fluid rounded shadow" alt="Habilitation M2L 1">
+            <p>Création de la session avec son identifiant</p>
+          </div>
+          <div class="col-md-6 mb-4">
+            <img src="images/m2l22.png" class="img-fluid rounded shadow" alt="Habilitation M2L 1">
+            <p>Création du formulaire d'authentification si pas authentifié</p>
+          </div>
+          <div class="col-md-6 mb-4">
+            <img src="images/m2l13.png" class="img-fluid rounded shadow" alt="Habilitation M2L 1">
+            <p>Création du formulaire si la personne est un Secrétaire connecté.</p>
+          </div>
+          <div class="col-md-6 mb-4">
+            <img src="images/m2l14.png" class="img-fluid rounded shadow" alt="Habilitation M2L 2">
+            <p>Boutons accessibles par le Secrétaire</p>
+          </div>
+          <div class="col-md-6 mb-4">
+            <img src="images/m2l15.png" class="img-fluid rounded shadow" alt="Habilitation M2L 3">
+            <p>Le visiteur n'a pas accès aux boutons</p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 
 

@@ -36,3 +36,40 @@ header {
 main {
   padding: 20px;
 }
+
+
+header {
+  background: linear-gradient(to right, #b2d8d8, #e0f7f7); /* dégradé léger */
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 95%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.header-text h4 {
+  margin-top: 0.5rem;
+  font-weight: normal;
+  color: #333;
+}
+
+.header-image img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
