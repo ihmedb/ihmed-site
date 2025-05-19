@@ -47,13 +47,49 @@
         <li>📊 Mesurer l’impact de ses choix : via des outils comme WebsiteCarbon ou PageSpeed Insights</li>
       </ul>
 
-      <div class="gallery">
-        <img src="images/greenit1.jpg" alt="Exemple Green IT 1">
-        <img src="images/greenit2.jpg" alt="Exemple Green IT 2">
-        <img src="images/greenit3.jpg" alt="Exemple Green IT 3">
-      </div>
+     <div class="gallery">
+      <img src="images/veille/flux.png" alt="Preuve 1" onclick="openLightbox(0)">
+      <img src="images/veille/sites-articles-suivis-avec-notes.png" alt="Preuve 2" onclick="openLightbox(1)">
+      <img src="images/veille/articlesannotés.png" alt="Preuve 3" onclick="openLightbox(2)">
+      <img src="images/veille/gg-drive-sites-notes.png" alt="Preuve 4" onclick="openLightbox(3)">
+      <img src="images/veille/redis-green-it.png" alt="Preuve 5" onclick="openLightbox(4)">
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+      <span class="close" onclick="closeLightbox()">&times;</span>
+      <img id="lightbox-img" src="" alt="Preuve">
+      <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+      <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
     </section>
 
   </main>
+  <script>
+  const images = [
+    "images/veille/flux.png",
+    "images/veille/sites-articles-suivis-avec-notes.png",
+    "images/veille/articlesannotés.png",
+    "images/veille/gg-drive-sites-notes.png",
+    "images/veille/redis-green-it.png"
+  ];
+
+  let currentIndex = 0;
+
+  function openLightbox(index) {
+    currentIndex = index;
+    document.getElementById("lightbox-img").src = images[currentIndex];
+    document.getElementById("lightbox").style.display = "flex";
+  }
+
+  function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+  }
+
+  function changeSlide(step) {
+    currentIndex = (currentIndex + step + images.length) % images.length;
+    document.getElementById("lightbox-img").src = images[currentIndex];
+  }
+</script>
 </body>
 </html>
