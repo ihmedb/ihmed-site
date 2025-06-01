@@ -6,27 +6,48 @@
   <title>Portfolio - Ihmed Benazza</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-  <header>
-    <nav>
-      <ul class="menu">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="competences.html">Compétences</a></li>
-        <li><a href="projets.html">Projets</a></li>
-        <li><a href="veille.html">Veille Technologique</a></li>
-      </ul>
-    </nav>
-  </header>
+<header>
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="projets.html">Projets</a></li>
+      <li><a href="veille.html">Veille Technologique</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <main>
-    <div class="profil-container">
-      <!-- <img src="images/pfp.png" alt="Photo Ihmed BENAZZA" class="profil-photo" /> -->
-      <h1 class="profil-nom">Ihmed BENAZZA</h1>
-      <p>Étudiant en BTS SIO SLAM au Lycée Gustave Eiffel</p>
-      
+<main>
+  <div class="profil-container">
+    <h1 class="profil-nom">Ihmed BENAZZA</h1>
+    <p>Étudiant en BTS SIO SLAM au Lycée Gustave Eiffel</p>
+  </div>
+
+  <div class="grid-container">
+    <div class="grid-item" onclick="window.open('cv_ihmedbenazza.pdf', '_blank')">
+      <img src="images/cv/cv.png" alt="Mon CV">
+      <h3>Mon CV</h3>
     </div>
-  </main>
+
+    <div class="grid-item" onclick="window.location.href='projets.html'">
+      <img src="images/projets/m2l.png" alt="Mes projets">
+      <h3>Mes Projets</h3>
+    </div>
+
+    <div class="grid-item" onclick="window.location.href='veille.html'">
+      <img src="images/index/inoreader.jpg" alt="Veille Techno">
+      <h3>Veille Technologique</h3>
+    </div>
+
+    <div class="grid-item" onclick="window.location.href='https://www.linkedin.com/in/ihmed-benazza-b31b692b7/'">
+      <img src="images/index/linkedin.png" alt="Contact">
+      <h3>Contact</h3>
+    </div>
+  </div>
+</main>
 
 </body>
 </html>
